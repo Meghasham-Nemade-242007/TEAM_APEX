@@ -20,7 +20,7 @@ class PageContent(BaseModel):
     extraction_method: str = "native"  # "native" | "ocr" | "empty"
     error: Optional[str] = None
 
-
+#Extraction result model to encapsulate the results of the extraction process, including page content, total pages, total characters, scanned pages count, method used, and any errors encountered during extraction.
 class ExtractionResult(BaseModel):
     pages: List[PageContent]
     total_pages: int
