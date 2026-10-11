@@ -22,7 +22,7 @@ from app.services.legal_analysis.operative_decision import OperativeDecisionExtr
 from app.services.legal_analysis.schema import ComprehensiveCaseAnalysis, DecisionSource
 
 
-# ─── 1. MALFORMED JSON & PARSER TESTS ──────────────────────────────────────────
+# ─── 1. MALFORMED JSON & PARSER TESTS  ──────────────────────────────────────────
 
 class TestMalformedJsonRepair:
     """Tests for multi-stage JSON repair and salvaging in json_parser.py."""
@@ -70,6 +70,7 @@ class TestMalformedJsonRepair:
   "operative_decision": "Petition is allowed. Impugned order quashed."
 }
 
+#structured legal analysis complete.
 Hope this structured breakdown assists your research!"""
         parsed, repaired, raw_salvage = extract_and_repair_json(raw)
         assert parsed is not None
