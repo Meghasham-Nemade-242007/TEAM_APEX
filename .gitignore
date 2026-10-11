@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+*.cover
+.hypothesis/
+
+# Environment & Secrets
+.env
+!.env.example
+*.key
+*.pem
+
+# Data (uploaded documents, indexes, DB)
+data/uploads/*
+!data/uploads/.gitkeep
+data/indexes/*
+!data/indexes/.gitkeep
+data/db/*
+!data/db/.gitkeep
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+frontend/*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Model cache (sentence-transformers downloads here)
+.cache/
+models/
